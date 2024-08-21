@@ -1,0 +1,15 @@
+/Users/ammaster10/Documents/Github/Year3/MyProject/bin/Debug/net8.0/MyProject
+/Users/ammaster10/Documents/Github/Year3/MyProject/bin/Debug/net8.0/MyProject.deps.json
+/Users/ammaster10/Documents/Github/Year3/MyProject/bin/Debug/net8.0/MyProject.runtimeconfig.json
+/Users/ammaster10/Documents/Github/Year3/MyProject/bin/Debug/net8.0/MyProject.dll
+/Users/ammaster10/Documents/Github/Year3/MyProject/bin/Debug/net8.0/MyProject.pdb
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/MyProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfoInputs.cache
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfo.cs
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/MyProject.csproj.CoreCompileInputs.cache
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/MyProject.sourcelink.json
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/MyProject.dll
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/refint/MyProject.dll
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/MyProject.pdb
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/MyProject.genruntimeconfig.cache
+/Users/ammaster10/Documents/Github/Year3/MyProject/obj/Debug/net8.0/ref/MyProject.dll
