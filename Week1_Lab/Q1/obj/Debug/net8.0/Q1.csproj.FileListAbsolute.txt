@@ -1,0 +1,15 @@
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/Q1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/Q1.AssemblyInfoInputs.cache
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/Q1.AssemblyInfo.cs
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/Q1.csproj.CoreCompileInputs.cache
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/Q1.sourcelink.json
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/bin/Debug/net8.0/Q1
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/bin/Debug/net8.0/Q1.deps.json
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/bin/Debug/net8.0/Q1.runtimeconfig.json
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/bin/Debug/net8.0/Q1.dll
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/bin/Debug/net8.0/Q1.pdb
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/Q1.dll
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/refint/Q1.dll
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/Q1.pdb
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/Q1.genruntimeconfig.cache
+/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q1/obj/Debug/net8.0/ref/Q1.dll
