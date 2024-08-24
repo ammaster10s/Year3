@@ -10,7 +10,7 @@
                 total += i;
             }
 
-            Console.WriteLine($"The total is {total}");
+            Console.WriteLine($"The sum of numbers from 1 to {size} is: {total}");
         }
 
         static void Main()
