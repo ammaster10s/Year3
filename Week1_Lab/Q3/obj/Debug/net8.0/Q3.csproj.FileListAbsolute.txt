@@ -1,0 +1,15 @@
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\bin\Debug\net8.0\Q3.exe
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\bin\Debug\net8.0\Q3.deps.json
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\bin\Debug\net8.0\Q3.runtimeconfig.json
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\bin\Debug\net8.0\Q3.dll
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\bin\Debug\net8.0\Q3.pdb
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\Q3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\Q3.AssemblyInfoInputs.cache
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\Q3.AssemblyInfo.cs
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\Q3.csproj.CoreCompileInputs.cache
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\Q3.sourcelink.json
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\Q3.dll
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\refint\Q3.dll
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\Q3.pdb
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\Q3.genruntimeconfig.cache
+C:\Users\pawar\OneDrive\Documents\GitHub\Year3\Week1_Lab\Q3\obj\Debug\net8.0\ref\Q3.dll

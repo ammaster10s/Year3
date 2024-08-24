@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/Q2.csproj": {}
+    "C:\\Users\\pawar\\OneDrive\\Documents\\GitHub\\Year3\\Week1_Lab\\Q2\\Q2.csproj": {}
   },
   "projects": {
-    "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/Q2.csproj": {
+    "C:\\Users\\pawar\\OneDrive\\Documents\\GitHub\\Year3\\Week1_Lab\\Q2\\Q2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/Q2.csproj",
+        "projectUniqueName": "C:\\Users\\pawar\\OneDrive\\Documents\\GitHub\\Year3\\Week1_Lab\\Q2\\Q2.csproj",
         "projectName": "Q2",
-        "projectPath": "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/Q2.csproj",
-        "packagesPath": "/Users/ammaster10/.nuget/packages/",
-        "outputPath": "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/obj/",
+        "projectPath": "C:\\Users\\pawar\\OneDrive\\Documents\\GitHub\\Year3\\Week1_Lab\\Q2\\Q2.csproj",
+        "packagesPath": "C:\\Users\\pawar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pawar\\OneDrive\\Documents\\GitHub\\Year3\\Week1_Lab\\Q2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ammaster10/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\pawar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
