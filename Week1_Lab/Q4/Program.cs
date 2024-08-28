@@ -7,7 +7,7 @@ namespace Week1_Lab.Q4
 {
     class Program
     {
-        static void Loop(int size)
+        static void Avg(int size)
         {
 
             List<int> templist = new List<int>();
