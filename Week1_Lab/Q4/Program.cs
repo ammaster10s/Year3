@@ -27,7 +27,7 @@ namespace Week1_Lab.Q4
         {
             Console.WriteLine("Enter the number of students: ");
             int temp = int.Parse(Console.ReadLine()); 
-            Loop(temp);
+            Avg(temp);
         }
     }
 
