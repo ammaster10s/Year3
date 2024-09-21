@@ -108,7 +108,7 @@ COMMIT;
 
 -Write a query to show a list of Male students and order by their first name. (output as below)
 
-SELECT * FROM `Student` WHERE Gender = 'M' ORDER BY `FirstName`;
+SELECT * FROM `Student` WHERE Gender = 'M' ORDER BY FirstName;
 
 -Write a query to show a list of students who study "Introduction to
 Computer Science". (output as below with student ID, first name, last
