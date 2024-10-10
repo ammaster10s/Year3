@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|c:\\users\\pawaris\\downloads\\signup\\signup\\signup\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|c:\\users\\pawaris\\downloads\\signup\\signup\\signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|c:\\users\\pawaris\\downloads\\signup\\signup\\signup\\infodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\infodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\signup\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|c:\\users\\pawaris\\downloads\\signup\\signup\\signup\\updatepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\updatepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|c:\\users\\pawaris\\downloads\\signup\\signup\\signup\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|c:\\users\\pawaris\\downloads\\signup\\signup\\signup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\signup\\updatepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA142618-E309-47EE-A70C-FE79D009102D}|Signup\\Signup.csproj|solutionrelative:signup\\updatepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "info.cs",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\info.cs",
+              "RelativeDocumentMoniker": "Signup\\info.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\info.cs",
+              "RelativeToolTip": "Signup\\info.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T12:30:28.236Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{de1fc918-f32e-4dd7-a915-1792a051f26b}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "updatepage.cs",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\updatepage.cs",
+              "RelativeDocumentMoniker": "Signup\\updatepage.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\updatepage.cs",
+              "RelativeToolTip": "Signup\\updatepage.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T04:50:07.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\Form1.cs",
+              "RelativeDocumentMoniker": "Signup\\Form1.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\Form1.cs",
+              "RelativeToolTip": "Signup\\Form1.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T12:31:08.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "userpage.cs",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\userpage.cs",
+              "RelativeDocumentMoniker": "Signup\\userpage.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\userpage.cs",
+              "RelativeToolTip": "Signup\\userpage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T12:34:09.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "infoDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\infoDAO.cs",
+              "RelativeDocumentMoniker": "Signup\\infoDAO.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\infoDAO.cs",
+              "RelativeToolTip": "Signup\\infoDAO.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswJoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T12:30:30.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\Program.cs",
+              "RelativeDocumentMoniker": "Signup\\Program.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\Program.cs",
+              "RelativeToolTip": "Signup\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T12:28:29.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "userpage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\userpage.cs",
+              "RelativeDocumentMoniker": "Signup\\userpage.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\userpage.cs [Design]",
+              "RelativeToolTip": "Signup\\userpage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T12:30:34.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\Form1.cs",
+              "RelativeDocumentMoniker": "Signup\\Form1.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\Form1.cs [Design]",
+              "RelativeToolTip": "Signup\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T12:35:31.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "updatepage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\updatepage.cs",
+              "RelativeDocumentMoniker": "Signup\\updatepage.cs",
+              "ToolTip": "C:\\Users\\Pawaris\\Downloads\\Signup\\Signup\\Signup\\updatepage.cs [Design]",
+              "RelativeToolTip": "Signup\\updatepage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T12:30:33.858Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
