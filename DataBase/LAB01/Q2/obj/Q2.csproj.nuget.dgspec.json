@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/Q2.csproj": {}
+    "/Users/ammaster10/Documents/Github/Year3/DataBase/LAB01/Q2/Q2.csproj": {}
   },
   "projects": {
-    "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/Q2.csproj": {
+    "/Users/ammaster10/Documents/Github/Year3/DataBase/LAB01/Q2/Q2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/Q2.csproj",
+        "projectUniqueName": "/Users/ammaster10/Documents/Github/Year3/DataBase/LAB01/Q2/Q2.csproj",
         "projectName": "Q2",
-        "projectPath": "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/Q2.csproj",
+        "projectPath": "/Users/ammaster10/Documents/Github/Year3/DataBase/LAB01/Q2/Q2.csproj",
         "packagesPath": "/Users/ammaster10/.nuget/packages/",
-        "outputPath": "/Users/ammaster10/Documents/Github/Year3/Week1_Lab/Q2/obj/",
+        "outputPath": "/Users/ammaster10/Documents/Github/Year3/DataBase/LAB01/Q2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ammaster10/.nuget/NuGet/NuGet.Config"

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ammaster10/Documents/Github/Year3/MyProject/MyProject.csproj",
+      "projectUniqueName": "/Users/ammaster10/Documents/Github/Year3/Temp/MyProject/MyProject.csproj",
       "projectName": "MyProject",
-      "projectPath": "/Users/ammaster10/Documents/Github/Year3/MyProject/MyProject.csproj",
+      "projectPath": "/Users/ammaster10/Documents/Github/Year3/Temp/MyProject/MyProject.csproj",
       "packagesPath": "/Users/ammaster10/.nuget/packages/",
-      "outputPath": "/Users/ammaster10/Documents/Github/Year3/MyProject/obj/",
+      "outputPath": "/Users/ammaster10/Documents/Github/Year3/Temp/MyProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ammaster10/.nuget/NuGet/NuGet.Config"
