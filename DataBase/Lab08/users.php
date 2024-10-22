@@ -151,7 +151,7 @@ if ($is_logged_in):
     if ($_POST["title"] == "Mr."){
         echo "Gender: Male", "<br>";
     }
-    else if ($_POST["title"] == "Mrs."){
+    else if ($_POST["title"] == "Mrs." || $_POST["title"] == "Ms."){
         echo "Gender: Female",  "<br>";
     }
    
