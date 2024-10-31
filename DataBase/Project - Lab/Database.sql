@@ -60,8 +60,10 @@ CREATE TABLE Place_Order (
 );
 
 CREATE TABLE Borrow_History (
-    Borrow_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Borrow_ID INT ,
     Payment_ID INT,
+    User_ID INT,
+    PRIMARY KEY (Borrow_ID, Payment_ID, User_ID),
     FOREIGN KEY (Payment_ID) REFERENCES Payment(Payment_ID)
 );
 
@@ -79,9 +81,10 @@ CREATE TABLE Order_Contain (
 
 -- Creating the Wishlist table
 CREATE TABLE Wishlist (
-    WishlistID INT PRIMARY KEY AUTO_INCREMENT,
+    WishlistID INT NOT NULL,
     User_ID INT NOT NULL,
     Movie_ID INT NOT NULL,
+    PRIMARY KEY (WishlistID, User_ID, Movie_ID),
     FOREIGN KEY (User_ID) REFERENCES User(User_ID),
     FOREIGN KEY (Movie_ID) REFERENCES Movie(Movie_ID)
 );
@@ -89,11 +92,3 @@ CREATE TABLE Wishlist (
 
 
 
--- Linking User with Borrow_History for access rights (many-to-many relationship)
-CREATE TABLE User_Access_BorrowHistory (
-    Borrow_ID INT NOT NULL,
-    User_ID INT NOT NULL,
-    PRIMARY KEY (Borrow_ID, User_ID),
-    FOREIGN KEY (Borrow_ID) REFERENCES Borrow_History(Borrow_ID),
-    FOREIGN KEY (User_ID) REFERENCES User(User_ID)
-);
