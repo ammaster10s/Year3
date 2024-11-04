@@ -36,7 +36,8 @@ CREATE TABLE employee(
 	salary		DECIMAL(12,2) ,
 	dept_no		INT 		,
 
-	Constraint chk_sex Check (sex in ('M', 'F')),
+	Constraint chk_sex Check (sex in ('M', 'F')), -- easier to modify the cpde
+	Constraint chk_sex1 Check gender = "F" or gender = "M", -- Alternative method not recommended.
 	Constraint employee_fk_deptno foreign key (dept_no) references department(dnumber)
 
 );
