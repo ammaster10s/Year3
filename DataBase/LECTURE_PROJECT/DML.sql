@@ -68,7 +68,7 @@ insert into referral_code (refund_id, order_id, user_id) values
 (27, 27, 27), (28, 28, 28), (29, 29, 29), (30, 30, 30);
 
 
-insert into application (discount_code_id, order_id) values
+insert into Application (discount_code_id, order_id) values
 ('DISCOUNT10', 1), ('NEWUSER20', 2), ('WELCOME15', 3),
 ('HOLIDAY5', 4), ('DISCOUNT25', 5), ('SUMMER30', 6),
 ('SAVE40', 7), ('DEAL50', 8), ('PROMO60', 9),
