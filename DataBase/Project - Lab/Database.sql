@@ -22,7 +22,7 @@ CREATE TABLE Movie (
     Released_date DATE,
     Description TEXT,
     Length INT, -- Length in minutes
-    Movie_Name VARCHAR(255) NOT NULL,
+    Movie_Name VARCHAR(255) NOT NULL
 );
 
 
