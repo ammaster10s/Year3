@@ -12,8 +12,8 @@ CREATE TABLE Product (
     Price DECIMAL(10,2) NOT NULL,
     Rating DECIMAL(1,1),
     Date_Added DATE NOT NULL,
-    Refund_ID INT NOT NULL,
-    Warranty_ID INT NOT NULL,
+    Refund_ID INT  NULL,
+    Warranty_ID INT  NULL,
     Order_ID INT NOT NULL,
     CONSTRAINT Rating CHECK (Rating BETWEEN 0 AND 5),
     UNIQUE (Product_ID)
@@ -118,6 +118,7 @@ CREATE TABLE Account (
     Join_Date DATE NOT NULL,
     Date_of_birth DATE NOT NULL,
     Home_address VARCHAR(100) NOT NULL,
+    email VARCHAR(50),
     CONSTRAINT Gender CHECK (Gender IN ('M', 'F')),
     UNIQUE (Account_Number)
 );
