@@ -19,50 +19,52 @@ require_once 'connect.php';
 				<!--%%%%% Main block %%%%-->
 				<?php
 				if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['sub'])) {
+					// Map title selections to correct IDs
+					$title_mapping = [
+						'Mr' => 1,
+						'Mrs' => 2,
+						'Ms' => 3
+					];
+
+					// Map gender selections to correct IDs
+					$gender_mapping = [
+						'Male' => 1,
+						'Female' => 2,
+						'N/A' => 3
+					];
+
 					// Collect and validate form data
-					$title_name = !empty($_POST['title']) ? $mysqli->real_escape_string($_POST['title']) : null;
+					$title_id = !empty($_POST['title']) ? $title_mapping[$_POST['title']] : null;
 					$firstname = $mysqli->real_escape_string($_POST['firstname']);
 					$lastname = $mysqli->real_escape_string($_POST['lastname']);
-					$gender_name = !empty($_POST['gender']) ? $mysqli->real_escape_string($_POST['gender']) : null;
+					$gender_id = !empty($_POST['gender']) ? $gender_mapping[$_POST['gender']] : null;
 					$email = $mysqli->real_escape_string($_POST['email']);
 					$username = $mysqli->real_escape_string($_POST['username']);
 					$password = $_POST['passwd'];
-					$usergroup_id = !empty($_POST['usergroup']) ? $mysqli->real_escape_string($_POST['usergroup']) : null;
+					$usergroup_id = !empty($_POST['usergroup']) ? (int)$_POST['usergroup'] : null;
 					$disabled = isset($_POST['disabled']) ? 1 : 0;
 
-					// Check for missing required fields
-					if ($title_name === null || $gender_name === null || $usergroup_id === null) {
+					// Validate the mapped IDs
+					$validTitleQuery = $mysqli->query("SELECT TITLE_ID FROM TITLE WHERE TITLE_ID = $title_id AND TITLE_ID IN (1,2,3)");
+					$validGenderQuery = $mysqli->query("SELECT GENDER_ID FROM GENDER WHERE GENDER_ID = $gender_id AND GENDER_ID IN (1,2,3)");
+
+					if ($title_id === null || $gender_id === null || $usergroup_id === null) {
 						echo "Error: Please ensure all required fields are selected.";
+						exit;
+					} elseif ($validTitleQuery->num_rows === 0 || $validGenderQuery->num_rows === 0) {
+						echo "Error: Invalid title or gender selection.";
 						exit;
 					}
 
-					if ($password == $_POST["cpasswd"]) {
-						echo "Passwords match!";
-					} else {
+					// Check if passwords match
+					if ($password != $_POST["cpasswd"]) {
 						echo "Error: Passwords do not match.";
 						exit;
 					}
-					// Insert or fetch Title ID
-					$titleQuery = "INSERT INTO TITLE (TITLE_NAME) VALUES ('$title_name') ON DUPLICATE KEY UPDATE TITLE_ID=LAST_INSERT_ID(TITLE_ID)";
-					if ($mysqli->query($titleQuery)) {
-						$title_id = $mysqli->insert_id;
-					} else {
-						echo "Error inserting title: {$mysqli->error}";
-						exit;
-					}
 
-					// Insert or fetch Gender ID
-					$genderQuery = "INSERT INTO GENDER (GENDER_NAME) VALUES ('$gender_name') ON DUPLICATE KEY UPDATE GENDER_ID=LAST_INSERT_ID(GENDER_ID)";
-					if ($mysqli->query($genderQuery)) {
-						$gender_id = $mysqli->insert_id;
-					} else {
-						echo "Error inserting gender: {$mysqli->error}";
-						exit;
-					}
-
-					// Insert into User
+					// Insert into User table
 					$userInsertQuery = "INSERT INTO USER (USER_TITLE, USER_FNAME, USER_LNAME, USER_GENDER, USER_EMAIL, USER_NAME, USER_PASSWD, USER_GROUPID, DISABLE) 
-                    VALUES ('$title_id', '$firstname', '$lastname', '$gender_id', '$email', '$username', '$password', '$usergroup_id', '$disabled')";
+    VALUES ($title_id, '$firstname', '$lastname', $gender_id, '$email', '$username', '$password', $usergroup_id, $disabled)";
 
 					if ($mysqli->query($userInsertQuery)) {
 						echo "User added successfully!";
@@ -89,7 +91,8 @@ require_once 'connect.php';
 						<th>Del</th>
 					</tr>
 					<?php
-					$q = "SELECT * FROM USER 
+					$q = "SELECT USER.*, TITLE.TITLE_NAME, GENDER.GENDER_NAME, USER_GROUP.USERGROUP_NAME 
+					      FROM USER 
 					      JOIN USER_GROUP ON USER.USER_GROUPID = USER_GROUP.USERGROUP_ID 
 					      JOIN TITLE ON USER.USER_TITLE = TITLE.TITLE_ID 
 					      JOIN GENDER ON USER.USER_GENDER = GENDER.GENDER_ID";
@@ -118,7 +121,7 @@ require_once 'connect.php';
 						<?php }
 						?>
 						<tr>
-							<td colspan="6" style="text-align: right; font-weight: bold;">
+							<td colspan="7" style="text-align: right; font-weight: bold;">
 								<?php
 								$totalRecords = $result->num_rows;
 								echo "Total Records: $totalRecords";

@@ -78,11 +78,13 @@ if (isset($_POST['sub'])) {
 
 					// Gender selection
 					echo "<label>Gender</label>";
-					$q2 = "SELECT GENDER_ID, GENDER_NAME FROM GENDER";
+					$q2 = 'select GENDER_ID, GENDER_NAME from GENDER;';
 					if ($result2 = $mysqli->query($q2)) {
 						while ($row2 = $result2->fetch_array()) {
-							$checked = $row2['GENDER_ID'] == $row['USER_GENDER'] ? "checked" : "";
-							echo "<input type='radio' name='gender' value='{$row2['GENDER_ID']}' $checked> {$row2['GENDER_NAME']}";
+							echo "<input ";
+							if ($row2[0] == $row['USER_GENDER'])
+								echo "CHECKED='CHECKED'";
+							echo "type='radio' name='gender' value='$row2[0]' >" . $row2[1];
 						}
 					} else {
 						echo "Query error: {$mysqli->error}";

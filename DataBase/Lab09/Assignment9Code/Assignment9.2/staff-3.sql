@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 12, 2024 at 01:58 PM
+-- Generation Time: Nov 14, 2024 at 12:31 PM
 -- Server version: 8.0.35
 -- PHP Version: 8.2.20
 
@@ -38,13 +38,8 @@ CREATE TABLE `GENDER` (
 
 INSERT INTO `GENDER` (`GENDER_ID`, `GENDER_NAME`) VALUES
 (1, 'Male'),
-(2, 'Male'),
-(3, 'Male'),
-(4, 'Male'),
-(5, 'Male'),
-(6, 'Female'),
-(7, 'Male'),
-(8, 'Other');
+(2, 'Female'),
+(3, 'N/A');
 
 -- --------------------------------------------------------
 
@@ -63,13 +58,8 @@ CREATE TABLE `TITLE` (
 
 INSERT INTO `TITLE` (`TITLE_ID`, `TITLE_NAME`) VALUES
 (1, 'Mr'),
-(2, 'Mr'),
-(3, 'Mr'),
-(4, 'Mr'),
-(5, 'Mr'),
-(6, 'Mrs'),
-(7, 'Mr'),
-(8, 'Mr');
+(2, 'Mrs'),
+(3, 'Ms');
 
 -- --------------------------------------------------------
 
@@ -95,7 +85,10 @@ CREATE TABLE `USER` (
 --
 
 INSERT INTO `USER` (`USER_ID`, `USER_TITLE`, `USER_FNAME`, `USER_LNAME`, `USER_GENDER`, `USER_EMAIL`, `USER_NAME`, `USER_PASSWD`, `USER_GROUPID`, `DISABLE`) VALUES
-(5, 6, 'Test', 'Test', 8, 'Test@gmail.com', 'Test', 'Test', 14, 0);
+(8, 1, 'Pawaris', 'Panyasombat', 1, 'Pawarispanyasombat@gmail.com', 'Test', 'Test', 14, 0),
+(9, 1, 'Test1', 'Test1', 1, 'Test@gmail.com', 'Test', 'Test', 14, 0),
+(11, 1, 'Test', 'Test', 1, 'Test@gmail.com', 'Test1', 'Test', 14, 1),
+(12, 2, 'Test', 'Test', 2, 'Test@gmail.com', 'Test', 'Test', 14, 0);
 
 -- --------------------------------------------------------
 
@@ -116,7 +109,7 @@ CREATE TABLE `USER_GROUP` (
 --
 
 INSERT INTO `USER_GROUP` (`USERGROUP_ID`, `USERGROUP_CODE`, `USERGROUP_NAME`, `USERGROUP_REMARK`, `USERGROUP_URL`) VALUES
-(14, 'Test', 'Test', 'Test', '111222');
+(14, 'Test1', 'Test2', 'Test', '111222');
 
 --
 -- Indexes for dumped tables
@@ -157,25 +150,25 @@ ALTER TABLE `USER_GROUP`
 -- AUTO_INCREMENT for table `GENDER`
 --
 ALTER TABLE `GENDER`
-  MODIFY `GENDER_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `GENDER_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `TITLE`
 --
 ALTER TABLE `TITLE`
-  MODIFY `TITLE_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `TITLE_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `USER`
 --
 ALTER TABLE `USER`
-  MODIFY `USER_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `USER_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `USER_GROUP`
 --
 ALTER TABLE `USER_GROUP`
-  MODIFY `USERGROUP_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `USERGROUP_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables
