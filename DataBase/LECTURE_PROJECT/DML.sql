@@ -67,7 +67,6 @@ INSERT INTO address (account_number, address) VALUES
 
 
 INSERT INTO Employee_account (Employee_ID, Account_Number, Position, Department) VALUES
-
 (1, 'ACC016', 'Sales Associate', 'Sales'),
 (2, 'ACC017', 'Technical Support', 'Support'),
 (3, 'ACC018', 'Accountant', 'Finance'),
@@ -125,6 +124,8 @@ insert into ordering (order_id, purchase_date, user_id, tracking_id) values
 (25, '2024-01-25', 25, 25), (26, '2024-01-26', 26, 26), (27, '2024-01-27', 27, 27),
 (28, '2024-01-28', 28, 28), (29, '2024-01-29', 29, 29), (30, '2024-01-30', 30, 30);
 
+
+-- update tracking_service SET 
 
 insert into delivery (delivery_id, order_id, name) values
 (1, 1, 'Express Delivery'), (2, 2, 'Standard Delivery'), (3, 3, 'Same-Day Delivery'),
