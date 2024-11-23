@@ -73,18 +73,17 @@ CREATE TABLE Customers (
     Address VARCHAR(100),
     Salary VARBINARY(100)
 );
-
 INSERT INTO Customers VALUES 
-    (1,'John',36,'Austrailia', AES_ENCRYPT(3000, '1123')),
-    (2,'Kane',25,'Africa', AES_ENCRYPT(1500, '1123')),
-    (3,'Neil',23,'Korea', AES_ENCRYPT(2000, '1123')),
-    (4,'Rohit',30,'India', AES_ENCRYPT(2500, '1123')),
-    (5,'Rahul',28,'India', AES_ENCRYPT(3500, '1123')),
-    (6,'Raj',40,'India', AES_ENCRYPT(2000, '1123')),
-    (7,'Ravi',35,'India', AES_ENCRYPT(3000, '1123'));
+    (1,'John',36,'Austrailia', AES_ENCRYPT(3000, SHA1('1123'))),
+    (2,'Kane',25,'Africa', AES_ENCRYPT(1500, SHA1('1123'))),
+    (3,'Neil',23,'Korea', AES_ENCRYPT(2000, SHA1('1123'))),
+    (4,'Rohit',30,'India', AES_ENCRYPT(2500, SHA1('1123'))),
+    (5,'Rahul',28,'India', AES_ENCRYPT(3500, SHA1('1123'))),
+    (6,'Raj',40,'India', AES_ENCRYPT(2000, SHA1('1123'))),
+    (7,'Ravi',35,'India', AES_ENCRYPT(3000, SHA1('1123')));
 
 DROP VIEW Secure_salary;
-CREATE VIEW Secure_salary as SELECT ID, Name, AES_DECRYPT(Salary, '1123') FROM Customers WHERE AES_DECRYPT(Salary, '1123') > 1500;
+CREATE VIEW Secure_salary as SELECT ID, Name, AES_DECRYPT(Salary, SHA1('1123')) FROM Customers WHERE AES_DECRYPT(Salary, SHA1('1123')) > 1500;
 
 SELECT * FROM Customers;
 SELECT * FROM Secure_salary;
