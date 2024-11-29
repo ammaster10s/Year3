@@ -1,0 +1,38 @@
+body{
+	font-family: sans-serif;
+}
+div.post {
+	width: 250px;
+	margin: 10px;
+	float:left;
+}
+
+.post .title{
+	font-weight: bold;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+	background-color: #2991F9;
+	color: white;
+	padding: 0.3em;
+	text-align: center;
+}
+
+.post .note{
+	padding: 0.5em;
+	overflow: auto;
+	margin: 0 10px;
+	border-left: 1px dotted black;
+	border-right: 1px dotted black;
+	max-height:200px;
+	background-color: #E2F0FE;
+}
+.post .notefoot{
+	font-weight: bold;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	background-color: #2991F9;
+	color: white;
+	padding: 0.5em;
+	text-align: center;
+}
+

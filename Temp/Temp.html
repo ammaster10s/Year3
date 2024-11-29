@@ -1,0 +1,133 @@
+<!-- คุณคือโปรแกรมเมอร์ ที่มีหน้าที่ช่วยสร้างเว็ปไซต์ Flash card ที่ผู้ใช้งานสามารถเข้าถึงได้ โดยที่เว็ปไซต์รวมทุกอย่าง HTML , Javascript , CSS  ไว้ใน 1 ไฟล์
+
+Flashcard จะมีคำถาม และคำตอบที่เกี่ยวข้องกัน 
+ยกตัวอย่าง 
+การ์ดใบที่ 1 
+- คำถาม: printf ()ใช้ทำอะไร
+- คำตอบ:  ใช้ในการแสดงผลข้อมูลทุกชนิดออกทาง จอภาพ
+
+ก่อนจะทำการเขียนเว็ปไซต์ คุณจะต้องทำการลำดับขั้นตอนการสร้างเว็ปไซต์ รวมถึง เนื้อหาที่ผู้ใช้ต้องการ 
+1. ( multi query)
+ทำเว็ป  Flashcard ให้หน่อย -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+      .flashcard {
+        width: 300px;
+        height: 200px;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      .flashcard:hover {
+        transform: scale(1.05);
+      }
+      .flashcard-content {
+        display: none;
+      }
+      .flashcard.show-answer .question {
+        display: none;
+      }
+      .flashcard.show-answer .flashcard-content {
+        display: block;
+      }
+      .button-container {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #117bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flashcard" id="flashcard">
+      <div class="question" id="question">printf() ใช้ทำอะไร?</div>
+      <div class="flashcard-content" id="answer">
+        ใช้ในการแสดงผลข้อมูลทุกชนิดออกทางจอภาพ
+      </div>
+    </div>
+    <div class="button-container">
+      <button onclick="prevCard()">การ์ดก่อนหน้า</button>
+      <button onclick="nextCard()">การ์ดถัดไป</button>
+    </div>
+
+    <script>
+      const flashcards = [
+        {
+          question: "printf() ใช้ทำอะไร?",
+          answer: "ใช้ในการแสดงผลข้อมูลทุกชนิดออกทางจอภาพ",
+        },
+        {
+          question: "HTML ย่อมาจากอะไร?",
+          answer: "HyperText Markup Language",
+        },
+        {
+          question: "CSS ใช้สำหรับอะไร?",
+          answer: "ใช้ในการจัดรูปแบบและการออกแบบเว็บไซต์",
+        },
+      ];
+
+      let currentCard = 0;
+
+      const flashcard = document.getElementById("flashcard");
+      const question = document.getElementById("question");
+      const answer = document.getElementById("answer");
+
+      flashcard.addEventListener("click", () => {
+        flashcard.classList.toggle("show-answer");
+      });
+
+      function updateCard() {
+        question.textContent = flashcards[currentCard].question;
+        answer.textContent = flashcards[currentCard].answer;
+        flashcard.classList.remove("show-answer");
+      }
+
+      function prevCard() {
+        currentCard = (currentCard - 1 + flashcards.length) % flashcards.length;
+        updateCard();
+      }
+
+      function nextCard() {
+        currentCard = (currentCard + 1) % flashcards.length;
+        updateCard();
+      }
+
+      updateCard();
+    </script>
+  </body>
+</html>

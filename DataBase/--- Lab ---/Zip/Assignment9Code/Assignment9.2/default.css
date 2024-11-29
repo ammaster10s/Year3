@@ -1,0 +1,150 @@
+﻿div#wrapper {
+	margin: 0px auto;
+	width: 70%;
+	min-width:600px;
+	padding-top: 0.3em;
+	box-shadow: 0px 0px 4px 4px lightgray;
+	/*fallback for browser not supporting shadow*/
+	border-left:1px solid #AAAAAA; 
+	border-right:1px solid #AAAAAA;
+}
+
+body {	
+	font-family:sans-serif;
+	margin:0px;
+}
+
+div#div_main{
+	position:relative;	
+}
+
+div#div_header{
+	font-size: 2em;
+	padding:0.7em;
+	background-color: white;
+	color:black;
+}
+
+div#div_subhead{
+	background-color:#F577A6;
+	border-bottom: 1px solid #333438;
+}
+
+div#div_left{
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	width:10%;
+	background-color:#F5E1E9;
+	border-right: 1px solid #F577A6;
+}
+
+div#div_content{	
+	background-color:white;
+	width:80%;
+	margin-left:10%;
+	padding:1em 0em;
+	min-height: 400px;
+}
+
+div#div_footer{
+	border-top: 3px solid #F577A6;
+	text-align:center;
+	padding:1em;
+}
+
+div#div_footer:after{
+	content: 'Adapted from "For Women-Female" theme from wordpress.com';
+}
+
+ul#menu{
+	list-style-type: none;
+	font-size:0.9em;
+	margin:0;
+	padding:0.6em;
+}
+
+#menu li{
+	text-align:center;
+	display:inline;
+	border-right: 1px dashed white;
+}
+
+#menu a{
+	font-family: Verdana, sans-serif;
+	padding:0.6em;
+	color:white;
+}
+
+#menu a:link, #menu a:visited{
+	text-decoration: none;
+}
+
+#menu a:hover, #menu a:active{
+	text-decoration:underline;
+	background-color:#DE4B82;
+}
+
+h2{
+	color: #CE658B;	
+	margin-top:0.4em;
+	margin-bottom:0.4em;	
+	padding-left: 1em;
+	border-bottom:2px dotted #F5C8DA;
+}
+
+.form label{
+	display: block;
+	text-align:right;
+	font-weight:bold;
+	width:200px;
+	float:left;
+	margin-right:10px;
+}
+
+.form input{
+	padding: 4px 2px;
+	margin: 2px 2px 10px 10px;
+}
+
+.form input[type="text"], .form input[type="password"]{
+	display:block;
+	width:200px;	
+}
+.form input[type="submit"]{
+	width:150px;
+}
+
+.form input[type="checkbox"]{
+	display:block;
+}
+
+.form select{
+	padding: 4px 2px;
+	display:block;
+	margin: 2px 2px 10px 10px;
+}
+
+.center{
+	text-align:center;
+}
+
+
+.usergroup th{
+	border: 1px solid black;
+	background-color: #F577A6;
+}
+.usergroup td{
+	border: 1px solid black;
+	
+}
+.usergroup table{
+	border-collapse: collapse;
+	margin-left: 20px;
+	width: 100%;
+}
+
+.radio-inline label {
+	margin-right: 10px;
+}
