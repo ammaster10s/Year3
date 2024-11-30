@@ -28,7 +28,8 @@ Create table Watch_Log (
 
 insert into
     BoxOfficeMovies
-values (
+values
+    (
         1,
         "Avengers: Endgame",
         "Marvel",
@@ -72,13 +73,15 @@ values (
     );
 
 insert into
-    users
-values (1, "captan_Marvel"),
+    usersda
+values
+    (1, "captan_Marvel"),
     (2, "oldmcdonald123");
 
 insert into
     Watch_Log
-values (1, 1, "2022-10-10 09:30:15"),
+values
+    (1, 1, "2022-10-10 09:30:15"),
     (2, 2, "2022-10-10 11:01:56"),
     (2, 2, "2022-10-13 14:26:03"),
     (1, 1, "2022-10-13 17:30:15"),
@@ -87,27 +90,40 @@ values (1, 1, "2022-10-10 09:30:15"),
     (2, 6, "2022-10-13 23:10:32");
 
 # List all users (usernames) , their watched moveis and year and the name of month of their watched time.
-SELECT users.userName, movie.Title, YEAR(logs.watch_datetime), MONTHNAME(logs.watch_datetime) as Month
+SELECT
+    users.userName,
+    movie.Title,
+    YEAR(logs.watch_datetime),
+    MONTHNAME(logs.watch_datetime) as Month
 FROM
     Users as users
     INNER JOIN Watch_Log as logs ON users.uID = logs.uID
     INNER JOIN BoxOfficeMovies as movie ON logs.mID = movie.MID;
 
 # List all movies in the BoxOfficeMovies table and find how many times they have been watched and results display descendingly
-
-SELECT movie.Title, COUNT(logs.mID) as freq
+SELECT
+    movie.Title,
+    COUNT(logs.mID) as freq
 FROM
     BoxOfficeMovies as movie
     LEFT JOIN Watch_Log as logs ON movie.MID = logs.mID
 GROUP BY
     movie.Title
-ORDER BY freq DESC;
+ORDER BY
+    freq DESC;
 
-SELECT * FROM watch_log;
+SELECT
+    *
+FROM
+    watch_log;
 
 CREATE view vw_cntMovie as (
-    SELECT COUNT(*) as cntMovie, mID, uID
-    from watch_log
+    SELECT
+        COUNT(*) as cntMovie,
+        mID,
+        uID
+    from
+        watch_log
     group by
         MID,
         uID
@@ -115,38 +131,55 @@ CREATE view vw_cntMovie as (
 
 drop view vw_cntMovie;
 
-select * from vw_cntMovie;
+select
+    *
+from
+    vw_cntMovie;
 
 # List all movies that have never been watched
-
-SELECT DISTINCT movie.mID, movie.Title
-FROM BoxOfficeMovies as movie
+SELECT
+    DISTINCT movie.mID,
+    movie.Title
+FROM
+    BoxOfficeMovies as movie
 where
     mID not in(
-        Select mID
-        from Watch_Log
+        Select
+            mID
+        from
+            Watch_Log
         GROUP BY
             mID
     );
 
 # List all movies that earned more than minimum gross of the year 2019
-
-SELECT mID, Title
-FROM BoxOfficeMovies
+SELECT
+    mID,
+    Title
+FROM
+    BoxOfficeMovies
 where
     Gross > (
-        SELECT MIN(Gross)
-        FROM BoxOfficeMovies
+        SELECT
+            MIN(Gross)
+        FROM
+            BoxOfficeMovies
         WHERE
             Year = 2019
     );
 
 # Create a view name "vw_cntMovie" for counting all movies of each studio that had been watched for each daym each month mand each year.
 DROP VIEW if exists vw_cntMovie;
+
 DROP VIEW if exists vw_cntMovie2;
 
 CREATE view vw_cntMovie as
-SELECT DAY(Logs.watch_datetime) as dd, MONTH(Logs.watch_datetime) as mm, YEAR(Logs.watch_datetime) as yy, movie.Studio, COUNT(movie.mID) as cntMovie
+SELECT
+    DAY(Logs.watch_datetime) as dd,
+    MONTH(Logs.watch_datetime) as mm,
+    YEAR(Logs.watch_datetime) as yy,
+    movie.Studio,
+    COUNT(movie.mID) as cntMovie
 FROM
     watch_log as Logs
     LEFT JOIN BoxOfficeMovies as movie ON Logs.mID = movie.MID
@@ -155,22 +188,44 @@ GROUP BY
     mm,
     movie.Studio,
     yy;
---  ONLY_FULL_GROUP_BY  YOU need to group all!
 
-Select * from vw_cntMovie;
+--  ONLY_FULL_GROUP_BY  YOU need to group all!
+Select
+    *
+from
+    vw_cntMovie;
 
 # Using subquery
+CREATE view vw_cntMovie2 as
+SELECT
+    DAY(watch_datetime) as dd,
+    MONTH(watch_datetime) as mm,
+    YEAR(watch_datetime) as yy,
+    Studio,
+    COUNT(mID) as cntMovie
+FROM
+    (
+        SELECT
+            watch_datetime,
+            mID,
+            (
+                SELECT
+                    Studio
+                FROM
+                    BoxOfficeMovies
+                WHERE
+                    BoxOfficeMovies.MID = Watch_Log.mID
+            ) as Studio
+        FROM
+            Watch_Log
+    ) as subquery
+GROUP BY
+    Studio,
+    dd,
+    mm,
+    yy;
 
-CREATE view vw_cntMovie2 as 
-SELECT DAY(watch_datetime) as dd, MONTH(watch_datetime) as mm, YEAR(watch_datetime) as yy, Studio, COUNT(mID) as cntMovie
-FROM (
-    SELECT watch_datetime, mID, (
-        SELECT Studio
-        FROM BoxOfficeMovies
-        WHERE BoxOfficeMovies.MID = Watch_Log.mID
-    ) as Studio
-    FROM Watch_Log
-) as subquery
-GROUP BY Studio, dd, mm, yy;
-
-Select * from vw_cntMovie2;
+Select
+    *
+from
+    vw_cntMovie2;

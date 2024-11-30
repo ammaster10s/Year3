@@ -69,3 +69,6 @@ values (101, "Somsak", "Saetung", "M");
 
 Alter table Student 
  alter column Gender set default 'F';
+
+
+ 
