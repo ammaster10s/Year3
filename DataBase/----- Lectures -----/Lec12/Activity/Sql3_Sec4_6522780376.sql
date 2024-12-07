@@ -82,3 +82,6 @@ group by
     STU_CLASS
 order by
     STU_CLASS;
+
+
+    

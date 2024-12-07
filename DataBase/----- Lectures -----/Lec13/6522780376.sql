@@ -100,7 +100,8 @@ FROM
     INNER JOIN Watch_Log as logs ON users.uID = logs.uID
     INNER JOIN BoxOfficeMovies as movie ON logs.mID = movie.MID;
 
-# List all movies in the BoxOfficeMovies table and find how many times they have been watched and results display descendingly
+# List all movies in the BoxOfficeMovies table and find how many 
+-- times they have been watched and results display descendingly
 SELECT
     movie.Title,
     COUNT(logs.mID) as freq
@@ -229,3 +230,5 @@ Select
     *
 from
     vw_cntMovie2;
+
+
