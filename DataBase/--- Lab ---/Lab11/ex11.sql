@@ -343,10 +343,12 @@ DELIMITER //
 Create Trigger log_deletion
 after DELETE ON customers
 for each ROW
-begin INSERT into deletion_logs(message) values (CONCAT('Customer ', OLD.customer_name, ' was deleted'));
+begin INSERT into deletion_logs(message) values (CONCAT('Customer '
+, OLD.customer_name, ' was deleted'));
 end //
 DELIMITER ;
 
 INSERT INTO customers (customer_name) VALUES ('John Doe');
 DELETE FROM customers WHERE customer_name = "John Doe";
 SELECT * from deletion_logs;
+

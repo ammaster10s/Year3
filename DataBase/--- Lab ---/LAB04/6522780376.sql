@@ -81,26 +81,18 @@ INSERT INTO `Student` (`Student_ID`, `FirstName`, `LastName`, `email`, `DOB`, `G
 
 ALTER TABLE `Course`
   ADD PRIMARY KEY (`Course_ID`);
-
-
 ALTER TABLE `Register`
   ADD PRIMARY KEY (`Register_ID`),
   ADD KEY `Student_ID` (`Student_ID`),
   ADD KEY `Section_ID` (`Section_ID`);
-
-
 ALTER TABLE `Section`
   ADD PRIMARY KEY (`Section_ID`),
   ADD KEY `Course_ID` (`Course_ID`);
-
-
 ALTER TABLE `Student`
   ADD PRIMARY KEY (`Student_ID`);
-
 ALTER TABLE `Register`
   ADD CONSTRAINT `register_ibfk_2` FOREIGN KEY (`Section_ID`) REFERENCES `Section` (`Section_ID`),
   ADD CONSTRAINT `register_ibfk_3` FOREIGN KEY (`Student_ID`) REFERENCES `Student` (`Student_ID`) ON DELETE CASCADE;
-
 ALTER TABLE `Section`
   ADD CONSTRAINT `section_ibfk_1` FOREIGN KEY (`Course_ID`) REFERENCES `Course` (`Course_ID`);
 COMMIT;

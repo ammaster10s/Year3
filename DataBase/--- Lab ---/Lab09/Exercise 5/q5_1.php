@@ -8,7 +8,8 @@ if ($mysqli->connect_errno) {
 }
 
 $r = array("Idiot's Guide Book", 1200); // Typo fixed in the string
-$q = "INSERT INTO product (p_name, p_price) VALUES( ' ".$mysqli->real_escape_string($r[0])." ', {$r[1]})";
+$q = "INSERT INTO product (p_name, p_price) 
+VALUES( ' ".$mysqli->real_escape_string($r[0])." ', {$r[1]})";
 
 // Corrected the conditional logic
 if( $mysqli->query($q) ) {

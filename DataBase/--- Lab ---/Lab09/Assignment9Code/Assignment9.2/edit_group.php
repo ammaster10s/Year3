@@ -9,7 +9,8 @@ if (isset($_POST['su'])) {
     $url = $mysqli->real_escape_string($_POST['groupurl']);
 
     // Update the database
-    $updateQuery = "UPDATE USER_GROUP SET USERGROUP_CODE='$groupcode', USERGROUP_NAME='$groupname', USERGROUP_REMARK='$remark', USERGROUP_URL='$url' WHERE USERGROUP_ID=$uid";
+    $updateQuery = "UPDATE USER_GROUP SET USERGROUP_CODE='$groupcode', USERGROUP_NAME='$groupname'
+    , USERGROUP_REMARK='$remark', USERGROUP_URL='$url' WHERE USERGROUP_ID=$uid";
     if ($mysqli->query($updateQuery) === TRUE) {
         echo "User group updated successfully!";
     } else {

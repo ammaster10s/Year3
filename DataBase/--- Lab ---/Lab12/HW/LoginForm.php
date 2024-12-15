@@ -24,7 +24,12 @@
         $admin_username = $_POST['admin_username'];
         $admin_password = htmlspecialchars($_POST['admin_password'], ENT_QUOTES, 'UTF-8');
 
-        $mysqli = new mysqli('localhost:8889', $admin_username, $admin_password, 'DB_LAB12');
+        $mysqli = new mysqli(
+            'localhost:8889',
+            $admin_username,
+            $admin_password,
+            'DB_LAB12'
+        );
 
         if ($mysqli->connect_errno) {
             echo "Failed to connect to MySQL: " . $mysqli->connect_error;

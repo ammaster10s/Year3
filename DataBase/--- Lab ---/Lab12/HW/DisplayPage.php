@@ -6,7 +6,12 @@ if (!isset($_SESSION['admin'])) {
     header('Location: LoginForm.php');
     exit();
 } else {
-    $mysqli = new mysqli('localhost:8889', 'admin', 'admin-user', 'DB_LAB12');
+    $mysqli = new mysqli(
+        'localhost:8889',
+        'admin',
+        'admin-user',
+        'DB_LAB12'
+    );
 
     if ($mysqli->connect_errno) {
         echo "Failed to connect to MySQL: " . $mysqli->connect_error;
@@ -25,10 +30,12 @@ if (!$result) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Display Account View</title>
 </head>
+
 <body>
     <h2>Login Successfully</h2>
 
@@ -57,6 +64,7 @@ if (!$result) {
     }
     ?>
 </body>
+
 </html>
 
 <?php

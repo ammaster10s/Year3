@@ -22,3 +22,4 @@ $mysqli->close();
 header("Location: viewinfo.php");
 
 ?>
+
